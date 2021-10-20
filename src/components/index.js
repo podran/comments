@@ -41,7 +41,12 @@ export const CommentWrapper = styled.div`
     margin-bottom: 20px;
     border-radius: 25px;
     background-color: #ffffff;
+    color: ${colors.gray.light};
     padding: 10px;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.6);
+        color: black;
+    }
 `;
 
 export const Button = styled.button`
@@ -65,7 +70,7 @@ export const Button = styled.button`
 `;
 
 export const SquareButton = styled.button`
-    background-color: ${({active}) => active ? colors.purple.normal : '#ffffff' };
+    background-color: ${({ active }) => active ? colors.purple.normal : '#ffffff'};
     border-radius: 0;
     padding: 5px 70px;
     min-width: 100px;
@@ -79,7 +84,7 @@ export const SquareButton = styled.button`
     white-space: nowrap;
 
     &:hover {
-        box-shadow: ${({active}) => active ? '0 5px 12px 0 rgb(164, 119, 255)' : '0 5px 12px 0 rgb(19, 50, 99) '};
+        box-shadow: ${({ active }) => active ? '0 5px 12px 0 rgb(164, 119, 255)' : '0 5px 12px 0 rgb(19, 50, 99) '};
     }
     &:active {
         background-color: ${({ active }) => active ? '#ffffff' : colors.purple.normal};
